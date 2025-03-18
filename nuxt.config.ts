@@ -15,4 +15,10 @@ export default defineNuxtConfig({
       Poppins: [400, 500, 600, 700], // Specify the weights you want to load
     },
   },
+  colorMode: {
+    preference: "light",
+  },
+  plugins: [
+    "~/plugins/theme.ts", // Register the theme plugin
+  ],
 });
