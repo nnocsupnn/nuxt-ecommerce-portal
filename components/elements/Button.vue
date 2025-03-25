@@ -5,6 +5,7 @@
     :color="props.color"
     :size="props.size"
     :variant="props.variant"
+    :disabled="props.disabled"
     :ui="{ font: 'font-normal' }"
     class="h-fit"
     :class="customClass"
@@ -19,7 +20,7 @@
 <script setup lang="ts">
 type ButtonColor = "blue" | "orange" | "red";
 type ButtonVariant = "solid" | "outline" | "ghost" | "soft";
-type ButtonSize = "sm" | "md" | "lg" | "xl";
+type ButtonSize = "xs" | "sm" | "md" | "lg" | "xl";
 
 type TButtonDisplay = {
   id: string;
